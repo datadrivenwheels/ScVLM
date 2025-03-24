@@ -1,0 +1,15 @@
+DATA:
+    ROOT: './Data/Video/combine_videos_ori'
+    TRAIN_FILE: './Data/labels/train_events_type_full.txt'
+    VAL_FILE: './Data/labels/val_events_type.txt'
+    DATASET: shrp2
+    NUM_FRAMES: 70
+    NUM_CLASSES: 16
+    LABEL_LIST: 'labels/shrp2events_type.csv'
+MODEL:
+    ARCH: ViT-B/16
+TRAIN:
+    BATCH_SIZE: 8
+    ACCUMULATION_STEPS: 1
+    EPOCHS: 200
+    LR: 2.e-6
